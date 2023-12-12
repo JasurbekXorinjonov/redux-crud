@@ -53,7 +53,7 @@ function Userlisting(props) {
                     <td>{item.phone}</td>
                     <td>{item.role}</td>
                     <td>
-                      <Link to={"/user/edit" + item.id} className="btn btn-primary">
+                      <Link to={"/user/edit/" + item.id} className="btn btn-primary">
                         Edit
                       </Link>
                       <button onClick={() => handledelete(item.id)} className="btn btn-danger">
