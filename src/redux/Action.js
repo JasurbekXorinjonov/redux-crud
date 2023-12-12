@@ -1,5 +1,5 @@
 import axios from "axios";
-import { DELETE_USER, FAIL_REQUEST, GET_USER_LIST, MAKE_REQUEST } from "./ActionType";
+import { ADD_USER, DELETE_USER, FAIL_REQUEST, GET_USER_LIST, MAKE_REQUEST } from "./ActionType";
 
 export const makeRequest = () => {
   return {
@@ -24,6 +24,12 @@ export const getUserList = (data) => {
 export const deleteUser = () => {
   return {
     type: DELETE_USER,
+  };
+};
+
+export const addUser = () => {
+  return {
+    type: ADD_USER,
   };
 };
 
@@ -52,6 +58,22 @@ export const Removeuser = (code) => {
       .delete("http://localhost:8000/user/" + code)
       .then((res) => {
         dispatch(deleteUser());
+      })
+      .catch((err) => {
+        dispatch(failRequest(err.message));
+      });
+    // }, 2000);
+  };
+};
+
+export const FunctionAdduser = (data) => {
+  return (dispatch) => {
+    dispatch(makeRequest());
+    // setTimeout(() => {
+    axios
+      .post("http://localhost:8000/user/", data)
+      .then((res) => {
+        dispatch(addUser());
       })
       .catch((err) => {
         dispatch(failRequest(err.message));

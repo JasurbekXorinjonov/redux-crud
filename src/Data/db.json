@@ -20,6 +20,13 @@
       "role": "admin",
       "email": "admin@in.com",
       "phone": "998991234567"
+    },
+    {
+      "name": "Test",
+      "email": "test@in.io",
+      "phone": "986532145",
+      "role": "staff",
+      "id": 4
     }
   ]
 }

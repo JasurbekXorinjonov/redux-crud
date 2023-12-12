@@ -2,7 +2,6 @@ import { connect } from "react-redux";
 import { FetchUserList, Removeuser } from "../redux/Action";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { toast } from "react-toastify";
 
 function Userlisting(props) {
   useEffect(() => {
@@ -28,7 +27,7 @@ function Userlisting(props) {
     <div>
       <div className="card">
         <div className="card-header">
-          <Link to={"user/add"} className="btn btn-success">
+          <Link to={"/user/add"} className="btn btn-success">
             Add User
           </Link>
         </div>

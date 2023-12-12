@@ -4,7 +4,6 @@ import Home from "./components/Home";
 import Userlisting from "./components/Userlisting";
 import Adduser from "./components/Adduser";
 import Updateuser from "./components/Updateuser";
-import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
