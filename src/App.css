@@ -20,3 +20,6 @@ a {
   text-decoration: none;
   padding: 2px;
 }
+.card-header {
+  text-align: right;
+}

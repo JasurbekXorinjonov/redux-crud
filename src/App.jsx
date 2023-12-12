@@ -19,7 +19,6 @@ function App() {
         <Route path="/user/add" element={<Adduser />} />
         <Route path="/user/edit:code" element={<Updateuser />} />
       </Routes>
-      <ToastContainer></ToastContainer>
     </div>
   );
 }

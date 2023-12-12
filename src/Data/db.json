@@ -6,6 +6,20 @@
       "role": "admin",
       "email": "admin@in.com",
       "phone": "998991234567"
+    },
+    {
+      "id": 2,
+      "name": "Asmin User",
+      "role": "admin",
+      "email": "admin@in.com",
+      "phone": "998991234567"
+    },
+    {
+      "id": 3,
+      "name": "Asmin User",
+      "role": "admin",
+      "email": "admin@in.com",
+      "phone": "998991234567"
     }
   ]
 }
